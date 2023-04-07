@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(255deg, #F28705,#F29F05);
+}
+
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+}
+
+.texto-form{
+    width: 50%;
+    height: 100%;
+    background: #b5955a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.texto-form h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.texto-form p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.form{
+    width: 50%;
+    height: 100%;
+    background-color: #F29F05;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-form{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.titulo, .btn{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.btnLogin, .btn{
+    display: flex;
+    align-items: center;
+}
+
+.btnLogin button, .btn button{
+    border: none;
+    background-color: #F28705a6;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btnLogin button:hover, .btn button:hover{
+    background-color: #F28705;
+}
+
+.btnLogin button a, .btn button a{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-box-pass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.input-box-pass input{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-box-pass input:focus{
+    border: 1px solid #F28705;
+    background: transparent;
+}
+
+.input-box-pass i{
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    cursor: pointer;
+    color: lightgray;
+}
+
+.input-box-pass label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.input-box label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-box input:focus{
+    border: 1px solid #F28705;
+    background: transparent;
+}
+
+.borda-vermelha {
+    border: 2px solid red;
+    animation: tremula 0.2s linear infinite alternate;
+  }
+  
+  @keyframes tremula {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(2px);
+    }
+  }
+  
+  .borda-verde {
+    border: 2px solid green;
+  }
+
+.ajuste{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 520px;
+    position: relative;
+}
+
+.ajuste i{
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    cursor: pointer;
+    color: lightgray;
+}
+
+.ajuste input{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.ajuste input:focus{
+    border: 1px solid #F28705;
+    background: transparent;
+}
+
+.ajuste label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+}
+

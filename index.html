@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/7782716487.js" crossorigin="anonymous"></script>
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="texto-form">
+            <h1 class="gamemate">Sobre o GameMate</h1>
+            <p>O GameMate é um sistema tracker de jogos que permite o usuário salvar suas informações sobre jogos que o mesmo possuí, além de suas estatísticas e conquistas, além de poder comparar seu perfil com amigos</p>
+        </div>
+        <div class="form">
+            <form onsubmit="return validarSenha()">
+                <div class="header-form">
+                    <div class="titulo">
+                        <h1>Faça seu cadastro</h1>
+                    </div>
+                    <div class="btnLogin">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
+                </div>
+
+                <div class="inputs">
+                    <div class="input-box">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box-pass">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" oninput="validarSenha()" id="senha" placeholder="Digite sua senha" required>
+                        <i class="fa-sharp fa-solid fa-eye" aria-hidden="true" class="showPass" onclick="exibir()"></i>
+                    </div>
+
+                    <div class="input-box-pass">
+                        <div class="ajuste">
+                            <label for="confirmarSenha">Confirmar senha:</label>
+                            <input type="password" name="confirmarSenha" oninput="validarSenha()" id="confirmarSenha" placeholder="Confirme sua senha" required>
+                            <i class="fa-sharp fa-solid fa-eye" aria-hidden="true" class="showPass" onclick="exibir()"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="btn">
+                    <button type="submit">Cadastrar</button>
+
+                </div>
+                <div id="senhaErro" style="display:none;">A senha deve ter pelo menos 7 caracteres e uma letra maiúscula.</div>
+                <div id="senhaNaoCoincideErro" style="display:none;">As senhas não coincidem.</div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>
